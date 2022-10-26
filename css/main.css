@@ -53,8 +53,11 @@ header{
 
 .characters li h5 {
     padding: 14px 8px;
-    
+    color: white; /* rib blue color text for names*/
 }
+
+.characters li a { text-decoration: none;}
+
 
 .characters li img { width: 150px; cursor: pointer; }
 
@@ -108,3 +111,61 @@ footer {
     height: 80px;
     background-color: rgb(40, 37, 37);
 }
+
+/* lightbox styles */
+.lightbox {
+    display: none;  /* now show until we wanted */
+    width: 100vw; /* viewport width = width of the browser window */
+    height: 100vh; /* viewport width = height of the browser window */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-repeat: no-repeat;
+
+    background-position: 40px bottom;
+    background-size: 55hv;
+}
+
+.lb_close { 
+    color: white;
+    font-size: 2em;
+    
+    text-decoration: none; /* underline text */
+
+    position: relative;
+    top: 12px;
+    left: 96%;
+    font-weight: bolder
+}
+
+.lb_close:hover { opacity: 0.5; }
+
+.lightbox article { /* text next to C.A photo */
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px ;
+}
+
+.lb_text, .lb_heading { text-align: left;}
+
+.lb_text { /* this is a class in html */
+    line-height: 1.6;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+#lightBox { /* this is an id */
+    background-image: url('../images/Cap_LB_Bg.png'); /* with this its keep repeating until fir the browser */
+} 
+#lightBox2 { /* this is an id */
+    background-image: url('../images/Thor_LB_Bg.png'); /* with this its keep repeating until fir the browser */
+} 
+
+
+/* toggle the ;lightbox on */
+.lightbox:target {display: block;}
+
+/* .lightbox#lightBox { display: block} */

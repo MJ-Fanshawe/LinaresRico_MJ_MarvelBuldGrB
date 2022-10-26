@@ -20,46 +20,57 @@
         <nav id="character-nav">
             <ul class="characters">
                 <li> <!-- div.sprite#cap -->
-                    <div class="sprite" id="cap"></div>
-                    <div class = "red-bumper"> </div>
-                    <h5>Captain America</h5>
-                    <!-- <img src="images/cap.jpeg" alt="Captain America"> -->
+                    <a href="#lightBox">
+                        <div class="sprite" id="cap"></div>
+                        <div class = "red-bumper"> </div>
+                        <h5>Captain America</h5>
+                        <!-- <img src="images/cap.jpeg" alt="Captain America"> -->
+                    </a>
                 </li>
 
                 <li> <!-- div.sprite#carol -->
-                    <div class="sprite" id="carol"></div>
-                    <div class = "red-bumper"> </div>
-                    <h5>Captain Marvel</h5>
-                    <!-- <img src="images/carol.jpeg" alt="Captain Marvel"> --> 
+                    <a href="#lightBox">
+                        <div class="sprite" id="carol"></div>
+                        <div class = "red-bumper"> </div>
+                        <h5>Captain Marvel</h5>
+                        <!-- <img src="images/carol.jpeg" alt="Captain Marvel"> -->
+                    </a> 
                 </li>
 
                 <li> <!-- div.sprite#clint -->
-                    <div class="sprite" id="clint"></div>
-                    <div class = "red-bumper"> </div>
-                    <h5>Hawkeye</h5>
-                   <!-- <img src="images/clint.jpeg" alt="Hawkeye"> -->
+                    <a href="#lightBox">
+                        <div class="sprite" id="clint"></div>
+                        <div class = "red-bumper"> </div>
+                        <h5>Hawkeye</h5>
+                    <!-- <img src="images/clint.jpeg" alt="Hawkeye"> -->
+                    </a>
                 </li>
 
                 <li> <!-- div.sprite#hulk -->
-                    <div class="sprite" id="hulk"></div>
-                    <div class = "red-bumper"> </div>
-                    <h5>Hulk</h5>
-                    <!-- <img src="images/hulk.jpeg" alt="Hulk"> -->
+                    <a href="#lightBox">
+                        <div class="sprite" id="hulk"></div>
+                        <div class = "red-bumper"> </div>
+                        <h5>Hulk</h5>
+                        <!-- <img src="images/hulk.jpeg" alt="Hulk"> -->
+                    </a>
                 </li>
 
                 <li> <!-- div.sprite#thor -->
-                    <div class="sprite" id="thor"></div
-                        >
-                    <div class = "red-bumper"> </div>
-                    <h5>Thor</h5>
-                <!-- <img src="images/thor.jpeg" alt="Thor"> -->
+                    <a href="#lightBox2">
+                        <div class="sprite" id="thor"></div>
+                        <div class = "red-bumper"> </div>
+                        <h5>Thor</h5>
+                    <!-- <img src="images/thor.jpeg" alt="Thor"> -->
+                    </a>
                 </li>
                 
                 <li> <!-- div.sprite#widow -->
-                <div class="sprite" id="widow"></div>
-                <div class = "red-bumper"> </div>
-                <h5>Black Widow</h5>
-                <!-- <img src="images/widow.jpeg" alt="Black Widow"> -->
+                    <a href="#lightBox">
+                        <div class="sprite" id="widow"></div>
+                        <div class = "red-bumper"> </div>
+                        <h5>Black Widow</h5>
+                        <!-- <img src="images/widow.jpeg" alt="Black Widow"> -->
+                    </a>
                 </li>
 
             </ul>
@@ -74,5 +85,38 @@
     <footer class="sticky_footer"> <!--  footer>h3{All images &copy; Marvel} CREAT FOOTER -->
         <h3>All images &copy; Marvel</h3>
     </footer>
+
+    
+    <!-- put the lightbox at the bottom of the stack (which is the top when it gets rendered) -->
+    <section class="lightbox" id="lightBox"> <!-- section.lightbox#lightBox -->
+        <a href="" class="lb_close">X</a> <!-- a[href=""]{X} -->
+        
+        <article> <!-- article>h3.lb_heading+p.lb_text*2 -->
+            <h3 class="lb_heading">Captain America - The First Avenger</h3>
+            <p class="lb_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate consequuntur dolor totam repudiandae necessitatibus, modi illo aliquid, dicta id laborum! Tenetur praesentium, odio atque ex rerum aperiam nesciunt quos.
+            </p>
+            <p class="lb_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste sunt quas atque officiis asperiores eaque, cumque tempora neque excepturi. Commodi animi quod odio sunt, voluptates atque quo laborum non. <!-- lorem -->
+            </p>
+        </article>
+
+    </section>
+
+    <!-- THOR -->
+    <section class="lightbox" id="lightBox2"> <!-- section.lightbox#lightBox -->
+        <a href="" class="lb_close">X</a> <!-- a[href=""]{X} -->
+        
+        <article> <!-- article>h3.lb_heading+p.lb_text*2 -->
+            <h3 class="lb_heading">Thor Odinson - The Asgardian</h3>
+            <p class="lb_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate consequuntur dolor totam repudiandae necessitatibus, modi illo aliquid, dicta id laborum! Tenetur praesentium, odio atque ex rerum aperiam nesciunt quos.
+            </p>
+            <p class="lb_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iste sunt quas atque officiis asperiores eaque, cumque tempora neque excepturi. Commodi animi quod odio sunt, voluptates atque quo laborum non. <!-- lorem -->
+            </p>
+        </article>
+
+    </section>
 </body>
 </html>
